@@ -3,7 +3,7 @@ import { configureProductAsync } from '@vue-storefront/core/modules/catalog/help
 import { prepareProductsToAdd, productsEquals, validateProduct } from '@vue-storefront/core/modules/cart/helpers'
 import cartActions from '@vue-storefront/core/modules/cart/store/actions';
 import { createContextMock } from '@vue-storefront/unit-tests/utils';
-import config from 'config';
+const config = require('config')
 
 jest.mock('@vue-storefront/core/store', () => ({
   dispatch: jest.fn(),

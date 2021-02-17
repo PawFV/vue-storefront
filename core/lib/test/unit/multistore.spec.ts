@@ -8,10 +8,10 @@ import {
   localizedRoutePath,
   localizedRouteConfig
 } from '@vue-storefront/core/lib/multistore'
-import config from 'config'
 import rootStore from '@vue-storefront/core/store';
 import { router } from '@vue-storefront/core/app';
 import { RouteConfig } from 'vue-router'
+const config = require('config')
 
 jest.mock('@vue-storefront/core/app', () => ({
   createApp: jest.fn(),
